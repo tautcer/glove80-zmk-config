@@ -181,6 +181,11 @@ ZMK_BEHAVIOR(rshft_cw, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+ZMK_BEHAVIOR(swapper, tri_state,
+    bindings = <&kt LGUI>, <&kp TAB>, <&kt LALT>;
+    ignored-key-positions = <LH1>;
+)
+
 ZMK_LAYER(Base,
 // ╭───────────────┬──────────────┬─────────────┬─────────────┬───────────────╮                                                                                                                                    ╭───────────────┬─────────────────┬───────────────┬─────────────────┬────────────────╮
      &kp C_BRI_DN   &kp C_BRI_UP    &kp C_PREV    &kp C_PP      &kp C_NEXT                                                                                                                                           &kp C_MUTE      &kp C_VOL_DN      &kp C_VOL_UP    &kp F9            &kp LG(LS(N4))
