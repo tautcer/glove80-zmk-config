@@ -45,5 +45,5 @@ jobs:
       - name: Upload result
         uses: actions/upload-artifact@v3
         with:
-          name: glove80_${{ steps.copy-result.uuid }}.uf2
-          path: glove80_${{ steps.copy-result.uuid }}.uf2
+          name: glove80_${{ steps.copy-result.outputs.uuid }}.uf2
+          path: glove80_${{ steps.copy-result.outputs.uuid }}.uf2
