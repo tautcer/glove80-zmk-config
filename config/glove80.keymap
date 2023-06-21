@@ -55,12 +55,12 @@
 
 &sk {  // sticky-key config
     quick-release;
-}
+};
 
 &caps_word {  // caps word config
     continue-list = <UNDERSCORE MINUS BACKSPACE DELETE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
     /delete-property/ ignore-modifiers;  // requires PR #1451
-}
+};
 
 /* Custom behaviors/combos/layers */
 
