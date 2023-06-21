@@ -42,6 +42,11 @@
 #define THUMB_KEYS       LH1 LH2 LH3     RH3 RH2 RH1 \
                          LH4 LH5 LH6     RH6 RH5 RH4
 
+#define ALPHA  A B C D E F G H I J K L M N O P \
+               Q R S T U V W X Y Z
+
+#define NUMERIC  N0 N1 N2 N3 N4 N5 N6 N7 N8 N9
+
 #define MAKE_HRM(NAME, TRIGGER_POS) \
     ZMK_BEHAVIOR(NAME, hold_tap, \
         flavor = "balanced"; \
@@ -57,8 +62,10 @@
     quick-release;
 };
 
-&caps_word {  // caps word config
-    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+&caps_word {  // caps word config, requires PR #1742
+    no-default-keys;
+    continue-list = <ALPHA NUMERIC UNDERSCORE MINUS BACKSPACE DELETE>;
+    shift-list = <ALPHA>;
 };
 
 /* Custom behaviors/combos/layers */
