@@ -42,6 +42,52 @@
 #define THUMB_KEYS       LH1 LH2 LH3     RH3 RH2 RH1 \
                          LH4 LH5 LH6     RH6 RH5 RH4
 
+#define MAKE_HRM(NAME, TRIGGER_POS) \
+    ZMK_BEHAVIOR(NAME, hold_tap, \
+        flavor = "balanced"; \
+        bindings = <&kp>, <&kp>; \
+        tapping-term-ms = <280>; \
+        quick-tap-ms = <175>; \
+        global-quick-tap-ms = <120>; \
+        hold-trigger-key-positions = <TRIGGER_POS>; \
+        hold-trigger-on-release; \
+    )
+
+&sk {  // sticky-key config
+    quick-release;
+}
+
+&caps_word {  // caps word config
+    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+    /delete-property/ ignore-modifiers;  // requires PR #1451
+}
+
+/* Custom behaviors/combos/layers */
+
+ZMK_COMBO(copy, &kp LG(C), LM3 LB3, 0, 50)
+
+MAKE_HRM(hml, RIGHT_HAND_KEYS THUMB_KEYS)
+MAKE_HRM(hmr, LEFT_HAND_KEYS THUMB_KEYS)
+
+ZMK_BEHAVIOR(thumb, hold_tap,
+    flavor = "balanced";
+    bindings = <&mo>, <&kp>;
+    tapping-term-ms = <200>; // extra delay
+    quick-tap-ms = <200>;
+)
+
+// tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
+ZMK_BEHAVIOR(lshft_cw, mod_morph,
+    bindings = <&sk LSHFT>, <&caps_word>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
+ZMK_BEHAVIOR(rshft_cw, mod_morph,
+    bindings = <&sk RSHFT>, <&caps_word>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 /* Standard Glove80 behaviors and macros */
 
 / {
@@ -63,14 +109,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
-        };
-
-        behavior_caps_word {
-            continue-list = <UNDERSCORE MINUS BACKSPACE DELETE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
-        };
-
-        behavior_sticky_key {
-            quick-release;
         };
     };
 
@@ -120,47 +158,6 @@
         };
     };
 };
-
-/* Custom behaviors/combos/layers */
-
-ZMK_COMBO(copy, &kp LG(C), LM3 LB3, 0, 50)
-
-ZMK_BEHAVIOR(hml, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    global-quick-tap-ms = <150>;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
-    hold-trigger-on-release;
-)
-
-ZMK_BEHAVIOR(hmr, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    global-quick-tap-ms = <150>;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
-    hold-trigger-on-release;
-)
-
-ZMK_BEHAVIOR(thumb, hold_tap,
-    flavor = "balanced";
-    bindings = <&mo>, <&kp>;
-    tapping-term-ms = <200>; // extra delay
-    quick-tap-ms = <200>;
-)
-
-ZMK_BEHAVIOR(lshft_cw, mod_morph,
-    bindings = <&sk LSHFT>, <&caps_word>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-ZMK_BEHAVIOR(rshft_cw, mod_morph,
-    bindings = <&sk RSHFT>, <&caps_word>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
 
 ZMK_LAYER(Base,
 // ╭───────────────┬──────────────┬─────────────┬─────────────┬───────────────╮                                                                                                                                    ╭───────────────┬─────────────────┬───────────────┬─────────────────┬────────────────╮
