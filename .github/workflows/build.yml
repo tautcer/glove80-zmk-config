@@ -28,20 +28,6 @@ jobs:
           git apply -3 < /tmp/${PR}.patch
           git commit -m 'Apply changes from ${owner}/${repo} PR#${PR}'
 
-      - name: merge changes from caps-word enhancement PR zmkfirmware/zmk#1451
-        env:
-          owner: zmkfirmware
-          repo: zmk
-          PR: 1451
-        run: |
-          cd src
-          export GIT_COMMITTER_NAME='Github Action' GIT_AUTHOR_NAME='Github Action'
-          curl -SsL -o /tmp/${PR}.patch https://github.com/${owner}/${repo}/pull/${PR}.patch
-          sed -i 's/    /\t/g' app/dts/behaviors/caps_word.dtsi
-          git add --update app/dts/behaviors/caps_word.dtsi
-          git apply -3 < /tmp/${PR}.patch
-          git commit -m 'Apply changes from ${owner}/${repo} PR#${PR}'
-
       - uses: cachix/install-nix-action@v20
         with:
           nix_path: nixpkgs=channel:nixos-22.05

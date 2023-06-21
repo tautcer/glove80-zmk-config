@@ -59,7 +59,6 @@
 
 &caps_word {  // caps word config
     continue-list = <UNDERSCORE MINUS BACKSPACE DELETE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
-    /delete-property/ ignore-modifiers;  // requires PR #1451
 };
 
 /* Custom behaviors/combos/layers */
@@ -77,15 +76,9 @@ ZMK_BEHAVIOR(thumb, hold_tap,
 )
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
-ZMK_BEHAVIOR(lshft_cw, mod_morph,
+ZMK_BEHAVIOR(smart_shft, mod_morph,
     bindings = <&sk LSHFT>, <&caps_word>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-// tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
-ZMK_BEHAVIOR(rshft_cw, mod_morph,
-    bindings = <&sk RSHFT>, <&caps_word>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LSFT)>;
 )
 
 /* Standard Glove80 behaviors and macros */
@@ -168,11 +161,11 @@ ZMK_LAYER(Base,
      &kp TAB        &kp Q           &kp W         &kp E         &kp R           &kp T                                                                                                                       &kp Y    &kp U           &kp I             &kp O           &kp P             &kp BSLH
 // ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────┤                                                                                                                  ├────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
      &mt LCTRL ESC   &hml LCTRL A   &hml LALT S   &hml LGUI D   &hml LSHIFT F   &kp G                                                                                                                       &kp H    &hmr RSHIFT J   &hmr RGUI K       &hmr LALT L     &hmr RCTRL SEMI   &kp SQT
-// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────┤ ╭───────────┬───────────────────────┬───────────────────╮ ╭───────────────────┬────────────────────┬───────────╮ ├────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
-     &kp EQUAL       &kp Z          &hml RALT X   &hml RGUI C   &kp V           &kp B      &lshft_cw   &kp LG(LS(LC(SPACE)))   &kp LG(LC(SPACE))     &kp LG(LS(SPACE))   &kp LG(SPACE)        &kp RET       &kp N    &kp M           &hmr RGUI COMMA   &hmr RALT DOT   &kp FSLH          &kp PG_UP
-// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────╯ ├───────────┼───────────────────────┼───────────────────┤ ├───────────────────┼────────────────────┼───────────┤ ╰────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
-     &magic 2 0      &kp HOME       &kp END       &kp LEFT      &kp RIGHT                  &kp TAB     &thumb 1 ESC            &kp LG(LA(LCTRL))     &kp RET             &thumb 1 BACKSPACE   &kp SPACE              &kp LPAR        &kp LBKT          &kp RBKT        &kp RPAR          &kp PG_DN
-// ╰───────────────┴──────────────┴─────────────┴─────────────┴───────────────╯          ╰───────────┴───────────────────────┴───────────────────╯ ╰───────────────────┴────────────────────┴───────────╯          ╰───────────────┴─────────────────┴───────────────┴─────────────────┴────────────────╯
+// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────┤ ╭─────────────┬───────────────────────┬───────────────────╮ ╭───────────────────┬────────────────────┬───────────╮ ├────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
+     &kp EQUAL       &kp Z          &hml RALT X   &hml RGUI C   &kp V           &kp B      &smart_shft   &kp LG(LS(LC(SPACE)))   &kp LG(LC(SPACE))     &kp LG(LS(SPACE))   &kp LG(SPACE)        &kp RET       &kp N    &kp M           &hmr RGUI COMMA   &hmr RALT DOT   &kp FSLH          &kp PG_UP
+// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────╯ ├─────────────┼───────────────────────┼───────────────────┤ ├───────────────────┼────────────────────┼───────────┤ ╰────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
+     &magic 2 0      &kp HOME       &kp END       &kp LEFT      &kp RIGHT                  &kp TAB       &thumb 1 ESC            &kp LG(LA(LCTRL))     &kp RET             &thumb 1 BACKSPACE   &kp SPACE              &kp LPAR        &kp LBKT          &kp RBKT        &kp RPAR          &kp PG_DN
+// ╰───────────────┴──────────────┴─────────────┴─────────────┴───────────────╯          ╰─────────────┴───────────────────────┴───────────────────╯ ╰───────────────────┴────────────────────┴───────────╯          ╰───────────────┴─────────────────┴───────────────┴─────────────────┴────────────────╯
 )
 
 ZMK_LAYER(Lower,
