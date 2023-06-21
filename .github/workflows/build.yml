@@ -35,9 +35,8 @@ jobs:
         run: |
           cd src
           export GIT_COMMITTER_NAME='Github Action' GIT_AUTHOR_NAME='Github Action'
-          curl -SsL -o /tmp/${PR}.patch https://github.com/${owner}/${repo}/pull/${PR}.patch
-          git apply -3 < /tmp/${PR}.patch
-          git commit -m 'Apply changes from ${owner}/${repo} PR#${PR}'
+          git fetch https://github.com/${owner}/${repo} pull/${PR}/head:refs/remotes/upstream/pull/${PR}
+          git merge -m "Merge ${owner}/${repo} PR#${PR}" refs/remotes/upstream/pull/${PR}
 
       - uses: cachix/install-nix-action@v20
         with:
