@@ -145,6 +145,13 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     hold-trigger-on-release;
 )
 
+ZMK_BEHAVIOR(thumb, hold_tap,
+    flavor = "balanced";
+    bindings = <&mo>, <&kp>;
+    tapping-term-ms = <200>; // extra delay
+    quick-tap-ms = <200>;
+)
+
 ZMK_BEHAVIOR(lshft_cw, mod_morph,
     bindings = <&sk LSHFT>, <&caps_word>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
