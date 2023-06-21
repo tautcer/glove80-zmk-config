@@ -14,6 +14,7 @@ jobs:
           repository: chrisandreae/zmk
           ref: zephyr-3-2
           path: src
+          fetch-depth: 0
 
       - name: merge changes from global-quick-tap-ms PR zmkfirmware/zmk#1387
         env:
@@ -35,8 +36,9 @@ jobs:
         run: |
           cd src
           export GIT_COMMITTER_NAME='Github Action' GIT_AUTHOR_NAME='Github Action'
-          git fetch https://github.com/${owner}/${repo} pull/${PR}/head:refs/remotes/upstream/pull/${PR}
-          git merge -m "Merge ${owner}/${repo} PR#${PR}" refs/remotes/upstream/pull/${PR}
+          curl -SsL -o /tmp/${PR}.patch https://github.com/${owner}/${repo}/pull/${PR}.patch
+          git apply -3 < /tmp/${PR}.patch
+          git commit -m 'Apply changes from ${owner}/${repo} PR#${PR}'
 
       - uses: cachix/install-nix-action@v20
         with:
