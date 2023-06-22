@@ -53,7 +53,7 @@
         bindings = <&kp>, <&kp>; \
         tapping-term-ms = <280>; \
         quick-tap-ms = <175>; \
-        global-quick-tap-ms = <120>; \
+        global-quick-tap-ms = <130>; \
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
     )
