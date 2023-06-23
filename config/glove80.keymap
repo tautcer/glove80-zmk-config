@@ -47,16 +47,20 @@
 
 #define NUMERIC  N0 N1 N2 N3 N4 N5 N6 N7 N8 N9
 
-#define MAKE_HRM(NAME, TRIGGER_POS) \
+#define MAKE_HRM(NAME, TAPPING_TERM, QUICK_TAP, GLOBAL_QUICK_TAP, TRIGGER_POS) \
     ZMK_BEHAVIOR(NAME, hold_tap, \
         flavor = "balanced"; \
         bindings = <&kp>, <&kp>; \
-        tapping-term-ms = <280>; \
-        quick-tap-ms = <175>; \
-        global-quick-tap-ms = <130>; \
+        tapping-term-ms = <TAPPING_TERM>; \
+        quick-tap-ms = <QUICK_TAP>; \
+        global-quick-tap-ms = <GLOBAL_QUICK_TAP>; \
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
     )
+
+#define MAKE_HRMS(name, tapping_term, quick_tap, global_quick_tap) \
+    MAKE_HRM(hml_ ## name, tapping_term, quick_tap, global_quick_tap, RIGHT_HAND_KEYS THUMB_KEYS) \
+    MAKE_HRM(hmr_ ## name, tapping_term, quick_tap, global_quick_tap, LEFT_HAND_KEYS THUMB_KEYS)
 
 &sk {  // sticky-key config
     quick-release;
@@ -72,8 +76,9 @@
 
 ZMK_COMBO(copy, &kp LG(C), LM3 LB3, 0, 50)
 
-MAKE_HRM(hml, RIGHT_HAND_KEYS THUMB_KEYS)
-MAKE_HRM(hmr, LEFT_HAND_KEYS THUMB_KEYS)
+MAKE_HRMS(mid, 280, 175, 130)
+MAKE_HRMS(pinky, 280, 175, 130)
+MAKE_HRMS(index, 280, 175, 130)
 
 ZMK_BEHAVIOR(thumb, hold_tap,
     flavor = "balanced";
@@ -160,19 +165,19 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
 };
 
 ZMK_LAYER(Base,
-// ╭───────────────┬──────────────┬─────────────┬─────────────┬───────────────╮                                                                                                                                    ╭───────────────┬─────────────────┬───────────────┬─────────────────┬────────────────╮
-     &kp C_BRI_DN   &kp C_BRI_UP    &kp C_PREV    &kp C_PP      &kp C_NEXT                                                                                                                                           &kp C_MUTE      &kp C_VOL_DN      &kp C_VOL_UP    &kp F9            &kp LG(LS(N4))
-// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────╮                                                                                                                  ╭────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
-     &kp GRAVE      &kp N1          &kp N2        &kp N3        &kp N4          &kp N5                                                                                                                      &kp N6   &kp N7          &kp N8            &kp N9          &kp N0            &kp MINUS
-// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────┤                                                                                                                  ├────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
-     &kp TAB        &kp Q           &kp W         &kp E         &kp R           &kp T                                                                                                                       &kp Y    &kp U           &kp I             &kp O           &kp P             &kp BSLH
-// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────┤                                                                                                                  ├────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
-     &mt LCTRL ESC   &hml LCTRL A   &hml LALT S   &hml LGUI D   &hml LSHIFT F   &kp G                                                                                                                       &kp H    &hmr RSHIFT J   &hmr RGUI K       &hmr LALT L     &hmr RCTRL SEMI   &kp SQT
-// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────┤ ╭─────────────┬───────────────────────┬───────────────────╮ ╭───────────────────┬────────────────────┬───────────╮ ├────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
-     &kp EQUAL       &kp Z          &hml RALT X   &hml RGUI C   &kp V           &kp B      &smart_shft   &kp LG(LS(LC(SPACE)))   &kp LG(LC(SPACE))     &kp LG(LS(SPACE))   &kp LG(SPACE)        &kp RET       &kp N    &kp M           &hmr RGUI COMMA   &hmr RALT DOT   &kp FSLH          &kp PG_UP
-// ├───────────────┼──────────────┼─────────────┼─────────────┼───────────────┼────────╯ ├─────────────┼───────────────────────┼───────────────────┤ ├───────────────────┼────────────────────┼───────────┤ ╰────────┼───────────────┼─────────────────┼───────────────┼─────────────────┼────────────────┤
-     &magic 2 0      &kp HOME       &kp END       &kp LEFT      &kp RIGHT                  &kp TAB       &thumb 1 ESC            &kp LG(LA(LCTRL))     &kp RET             &thumb 1 BACKSPACE   &kp SPACE              &kp LPAR        &kp LBKT          &kp RBKT        &kp RPAR          &kp PG_DN
-// ╰───────────────┴──────────────┴─────────────┴─────────────┴───────────────╯          ╰─────────────┴───────────────────────┴───────────────────╯ ╰───────────────────┴────────────────────┴───────────╯          ╰───────────────┴─────────────────┴───────────────┴─────────────────┴────────────────╯
+// ╭───────────────┬────────────────────┬─────────────────┬─────────────────┬─────────────────────╮                                                                                                                                      ╭─────────────────────┬─────────────────────┬───────────────────┬───────────────────────┬────────────────╮
+     &kp C_BRI_DN   &kp C_BRI_UP          &kp C_PREV        &kp C_PP          &kp C_NEXT                                                                                                                                                   &kp C_MUTE            &kp C_VOL_DN          &kp C_VOL_UP        &kp F9                  &kp LG(LS(N4))
+// ├───────────────┼────────────────────┼─────────────────┼─────────────────┼─────────────────────┼────────╮                                                                                                                    ╭────────┼─────────────────────┼─────────────────────┼───────────────────┼───────────────────────┼────────────────┤
+     &kp GRAVE      &kp N1                &kp N2            &kp N3            &kp N4                &kp N5                                                                                                                        &kp N6   &kp N7                &kp N8                &kp N9              &kp N0                  &kp MINUS
+// ├───────────────┼────────────────────┼─────────────────┼─────────────────┼─────────────────────┼────────┤                                                                                                                    ├────────┼─────────────────────┼─────────────────────┼───────────────────┼───────────────────────┼────────────────┤
+     &kp TAB        &kp Q                 &kp W             &kp E             &kp R                 &kp T                                                                                                                         &kp Y    &kp U                 &kp I                 &kp O               &kp P                   &kp BSLH
+// ├───────────────┼────────────────────┼─────────────────┼─────────────────┼─────────────────────┼────────┤                                                                                                                    ├────────┼─────────────────────┼─────────────────────┼───────────────────┼───────────────────────┼────────────────┤
+     &mt LCTRL ESC   &hml_pinky LCTRL A   &hml_mid LALT S   &hml_mid LGUI D   &hml_index LSHIFT F   &kp G                                                                                                                         &kp H    &hmr_index RSHIFT J   &hmr_mid RGUI K       &hmr_mid LALT L     &hmr_pinky RCTRL SEMI   &kp SQT
+// ├───────────────┼────────────────────┼─────────────────┼─────────────────┼─────────────────────┼────────┤ ╭─────────────┬───────────────────────┬───────────────────╮ ╭───────────────────┬────────────────────┬───────────╮ ├────────┼─────────────────────┼─────────────────────┼───────────────────┼───────────────────────┼────────────────┤
+     &kp EQUAL       &kp Z                &hml_mid RALT X   &hml_mid RGUI C   &kp V                 &kp B      &smart_shft   &kp LG(LS(LC(SPACE)))   &kp LG(LC(SPACE))     &kp LG(LS(SPACE))   &kp LG(SPACE)        &kp RET       &kp N    &kp M                 &hmr_mid RGUI COMMA   &hmr_mid RALT DOT   &kp FSLH                &kp PG_UP
+// ├───────────────┼────────────────────┼─────────────────┼─────────────────┼─────────────────────┼────────╯ ├─────────────┼───────────────────────┼───────────────────┤ ├───────────────────┼────────────────────┼───────────┤ ╰────────┼─────────────────────┼─────────────────────┼───────────────────┼───────────────────────┼────────────────┤
+     &magic 2 0      &kp HOME             &kp END           &kp LEFT          &kp RIGHT                        &kp TAB       &thumb 1 ESC            &kp LG(LA(LCTRL))     &kp RET             &thumb 1 BACKSPACE   &kp SPACE              &kp LPAR              &kp LBKT              &kp RBKT            &kp RPAR                &kp PG_DN
+// ╰───────────────┴────────────────────┴─────────────────┴─────────────────┴─────────────────────╯          ╰─────────────┴───────────────────────┴───────────────────╯ ╰───────────────────┴────────────────────┴───────────╯          ╰─────────────────────┴─────────────────────┴───────────────────┴───────────────────────┴────────────────╯
 )
 
 ZMK_LAYER(Lower,
