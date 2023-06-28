@@ -42,25 +42,34 @@
 #define THUMB_KEYS       LH1 LH2 LH3     RH3 RH2 RH1 \
                          LH4 LH5 LH6     RH6 RH5 RH4
 
+#define UNSET_TIMER  (-1)
+
 #define ALPHA  A B C D E F G H I J K L M N O P \
                Q R S T U V W X Y Z
 
 #define NUMERIC  N0 N1 N2 N3 N4 N5 N6 N7 N8 N9
 
-#define MAKE_HRM(NAME, TAPPING_TERM, QUICK_TAP, GLOBAL_QUICK_TAP, TRIGGER_POS) \
-    ZMK_BEHAVIOR(NAME, hold_tap, \
-        flavor = "balanced"; \
+
+#define MAKE_HRMS(NAME, FLAVOR, TAPPING_TERM, QUICK_TAP, GLOBAL_QUICK_TAP) \
+    ZMK_BEHAVIOR(hml_ ## NAME, hold_tap, \
+        flavor = FLAVOR; \
         bindings = <&kp>, <&kp>; \
         tapping-term-ms = <TAPPING_TERM>; \
         quick-tap-ms = <QUICK_TAP>; \
         global-quick-tap-ms = <GLOBAL_QUICK_TAP>; \
-        hold-trigger-key-positions = <TRIGGER_POS>; \
+        hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>; \
+        hold-trigger-on-release; \
+    ) \
+    ZMK_BEHAVIOR(hmr_ ## NAME, hold_tap, \
+        flavor = FLAVOR; \
+        bindings = <&kp>, <&kp>; \
+        tapping-term-ms = <TAPPING_TERM>; \
+        quick-tap-ms = <QUICK_TAP>; \
+        global-quick-tap-ms = <GLOBAL_QUICK_TAP>; \
+        hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>; \
         hold-trigger-on-release; \
     )
 
-#define MAKE_HRMS(name, tapping_term, quick_tap, global_quick_tap) \
-    MAKE_HRM(hml_ ## name, tapping_term, quick_tap, global_quick_tap, RIGHT_HAND_KEYS THUMB_KEYS) \
-    MAKE_HRM(hmr_ ## name, tapping_term, quick_tap, global_quick_tap, LEFT_HAND_KEYS THUMB_KEYS)
 
 &sk {  // sticky-key config
     quick-release;
@@ -76,9 +85,9 @@
 
 ZMK_COMBO(copy, &kp LG(C), LM3 LB3, 0, 50)
 
-MAKE_HRMS(mid,   280, 175, 130)
-MAKE_HRMS(pinky, 280, 175, 130)
-MAKE_HRMS(index, 280, 175, 130)
+MAKE_HRMS(mid,   "tap-preferred", 250, 160, 160)
+MAKE_HRMS(pinky, "balanced", 280, 175, 130)
+MAKE_HRMS(index, "balanced", 280, 175, UNSET_TIMER)  // no typing streak
 
 ZMK_BEHAVIOR(thumb, hold_tap,
     flavor = "balanced";
