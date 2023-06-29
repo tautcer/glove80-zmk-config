@@ -11,34 +11,10 @@ jobs:
           submodules: recursive
       - uses: actions/checkout@v3
         with:
-          repository: chrisandreae/zmk
-          ref: zephyr-3-2
+          repository: bryanforbes/zmk
+          ref: bryanforbes
           path: src
           fetch-depth: 0
-
-      - name: merge changes from global-quick-tap-ms PR zmkfirmware/zmk#1387
-        env:
-          owner: zmkfirmware
-          repo: zmk
-          PR: 1387
-        run: |
-          cd src
-          export GIT_COMMITTER_NAME='Github Action' GIT_AUTHOR_NAME='Github Action'
-          curl -SsL -o /tmp/${PR}.patch https://github.com/${owner}/${repo}/pull/${PR}.patch
-          git apply -3 < /tmp/${PR}.patch
-          git commit -m 'Apply changes from ${owner}/${repo} PR#${PR}'
-
-      - name: merge changes from caps-word feature parity PR zmkfirmware/zmk#1742
-        env:
-          owner: zmkfirmware
-          repo: zmk
-          PR: 1742
-        run: |
-          cd src
-          export GIT_COMMITTER_NAME='Github Action' GIT_AUTHOR_NAME='Github Action'
-          curl -SsL -o /tmp/${PR}.patch https://github.com/${owner}/${repo}/pull/${PR}.patch
-          git apply -3 < /tmp/${PR}.patch
-          git commit -m 'Apply changes from ${owner}/${repo} PR#${PR}'
 
       - uses: cachix/install-nix-action@v20
         with:
