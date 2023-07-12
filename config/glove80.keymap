@@ -85,7 +85,7 @@
 
 ZMK_COMBO(copy, &kp LG(C), LM3 LB3, 0, 50)
 
-MAKE_HRMS(homes, "balanced", 240, 175, 150)
+MAKE_HRMS(homes, "balanced", 240, 175, 160)
 MAKE_HRMS(index, "balanced", 240, 175, UNSET_TIMER)  // no typing streak
 
 ZMK_BEHAVIOR(thumb, hold_tap,
