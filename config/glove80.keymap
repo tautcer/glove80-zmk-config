@@ -85,14 +85,14 @@
 
 ZMK_COMBO(copy, &kp LG(C), LM3 LB3, 0, 50)
 
-MAKE_HRMS(homes, "balanced", 240, 175, 160)
-MAKE_HRMS(index, "balanced", 240, 175, UNSET_TIMER)  // no typing streak
+MAKE_HRMS(homes, "balanced", 250, 175, 175)
+MAKE_HRMS(index, "balanced", 250, 300, UNSET_TIMER)  // no typing streak
 
 ZMK_BEHAVIOR(thumb, hold_tap,
     flavor = "balanced";
     bindings = <&mo>, <&kp>;
     tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
+    quick-tap-ms = <300>;
 )
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
