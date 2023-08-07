@@ -65,7 +65,7 @@
     )
 
 #define GLOVE80_LAYER(name, start, mid, end, thumb_row_1, thumb_row_2) \
-  ZMK_LAYER(name, <start thumb_row_1 mid thumb_row_2 end>)
+  ZMK_LAYER(name, start thumb_row_1 mid thumb_row_2 end)
 
 
 &sk {  // sticky-key config
