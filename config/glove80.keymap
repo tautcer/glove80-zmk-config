@@ -79,7 +79,7 @@
 
 /* Custom behaviors/combos/layers */
 
-ZMK_COMBO(copy, &kp LG(C), LM3 LB3, 0, 50)
+ZMK_COMBO(copy, &kp LG(C), LM2 LB2, 0, 50)
 
 MAKE_HRMS(homes, "balanced",
     hold-trigger-on-release;  // wait for other home row mods
