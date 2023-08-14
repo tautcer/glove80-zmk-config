@@ -83,13 +83,13 @@ ZMK_COMBO(copy, &kp LG(C), LM2 LB2, 0, 50)
 
 MAKE_HRMS(homes, "balanced",
     hold-trigger-on-release;  // wait for other home row mods
-    tapping-term-ms = <260>;
+    tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     global-quick-tap-ms = <150>;
 )
 MAKE_HRMS(index, "tap-preferred",
     tapping-term-ms = <180>;
-    quick-tap-ms = <175>;
+    quick-tap-ms = <300>;
     // no typing streak
 )
 
