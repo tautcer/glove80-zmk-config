@@ -35,7 +35,7 @@ layers:
   - O
   - P
   - \
-  - {t: ESC, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Esc, h: '$$mdi:apple-keyboard-control$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
@@ -53,12 +53,12 @@ layers:
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
   - V
   - B
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky, s: Caps Word}
+  - Smart Shift
   - $$mdi:web$$
   - $$mdi:emoticon-happy-outline$$
   - $$mdi:lock-outline$$
   - $$mdi:magnify$$
-  - RET
+  - ⮐
   - N
   - M
   - ','
@@ -66,12 +66,12 @@ layers:
   - /
   - '='
   - $$mdi:auto-fix$$
-  - HOME
-  - END
+  - Home
+  - End
   - $$mdi:arrow-left$$
   - $$mdi:arrow-right$$
   - $$mdi:keyboard-tab$$
-  - {t: ESC, h: Lower}
+  - {t: Esc, h: Lower}
   - $$mdi:microphone$$
   - Mouse
   - {t: '$$mdi:backspace-outline$$', h: Symbol}
@@ -80,7 +80,7 @@ layers:
   - '['
   - ']'
   - )
-  - PG DN
+  - PgDn
   Lower:
   - F1
   - F2
