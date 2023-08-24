@@ -113,16 +113,16 @@ parse_config:
     RAYCAST: '$$mdi:magnify$$'
     EMOJI: '$$mdi:emoticon-happy-outline$$'
     SCRNSHT: '$$mdi:monitor-screenshot$$'
-    '&rgb_ug RGB_SPI': {h: $$mdi:lightbulb-outline$$, t: 'Spd+'}
-    '&rgb_ug RGB_SPD': {h: $$mdi:lightbulb-outline$$, t: 'Spd-'}
-    '&rgb_ug RGB_SAI': {h: $$mdi:lightbulb-outline$$, t: 'Sat+'}
-    '&rgb_ug RGB_SAD': {h: $$mdi:lightbulb-outline$$, t: 'Sat-'}
-    '&rgb_ug RGB_HUI': {h: $$mdi:lightbulb-outline$$, t: 'Hue+'}
-    '&rgb_ug RGB_HUD': {h: $$mdi:lightbulb-outline$$, t: 'Hue-'}
-    '&rgb_ug RGB_BRI': {h: $$mdi:lightbulb-outline$$, t: 'Bri+'}
-    '&rgb_ug RGB_BRD': {h: $$mdi:lightbulb-outline$$, t: 'Bri-'}
-    '&rgb_ug RGB_TOG': {h: $$mdi:lightbulb-outline$$, t: 'Toggle'}
-    '&rgb_ug RGB_EFF': {h: $$mdi:lightbulb-outline$$, t: 'Effects'}
+    '&rgb_ug RGB_SPI': {h: $$mdi:lightbulb$$, t: 'Spd+'}
+    '&rgb_ug RGB_SPD': {h: $$mdi:lightbulb$$, t: 'Spd-'}
+    '&rgb_ug RGB_SAI': {h: $$mdi:lightbulb$$, t: 'Sat+'}
+    '&rgb_ug RGB_SAD': {h: $$mdi:lightbulb$$, t: 'Sat-'}
+    '&rgb_ug RGB_HUI': {h: $$mdi:lightbulb$$, t: 'Hue+'}
+    '&rgb_ug RGB_HUD': {h: $$mdi:lightbulb$$, t: 'Hue-'}
+    '&rgb_ug RGB_BRI': {h: $$mdi:lightbulb$$, t: 'Bri+'}
+    '&rgb_ug RGB_BRD': {h: $$mdi:lightbulb$$, t: 'Bri-'}
+    '&rgb_ug RGB_TOG': {h: $$mdi:lightbulb$$, t: 'Toggle'}
+    '&rgb_ug RGB_EFF': {h: $$mdi:lightbulb$$, t: 'Effects'}
     U_BTN1: {h: $$mdi:mouse$$, t: $$mdi:numeric-1$$}
     U_BTN2: {h: $$mdi:mouse$$, t: $$mdi:numeric-2$$}
     U_BTN3: {h: $$mdi:mouse$$, t: $$mdi:numeric-3$$}
