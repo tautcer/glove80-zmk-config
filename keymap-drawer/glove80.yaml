@@ -186,11 +186,11 @@ layers:
   - ''
   - ''
   - ''
-  - {t: Spd+, h: '$$mdi:lightbulb-outline$$'}
-  - {t: Sat+, h: '$$mdi:lightbulb-outline$$'}
-  - {t: Hue+, h: '$$mdi:lightbulb-outline$$'}
-  - {t: Bri+, h: '$$mdi:lightbulb-outline$$'}
-  - {t: Toggle, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Spd+, h: '$$mdi:lightbulb$$'}
+  - {t: Sat+, h: '$$mdi:lightbulb$$'}
+  - {t: Hue+, h: '$$mdi:lightbulb$$'}
+  - {t: Bri+, h: '$$mdi:lightbulb$$'}
+  - {t: Toggle, h: '$$mdi:lightbulb$$'}
   - ''
   - ''
   - ''
@@ -198,11 +198,11 @@ layers:
   - ''
   - ''
   - Boot
-  - {t: Spd-, h: '$$mdi:lightbulb-outline$$'}
-  - {t: Sat-, h: '$$mdi:lightbulb-outline$$'}
-  - {t: Hue-, h: '$$mdi:lightbulb-outline$$'}
-  - {t: Bri-, h: '$$mdi:lightbulb-outline$$'}
-  - {t: Effects, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Spd-, h: '$$mdi:lightbulb$$'}
+  - {t: Sat-, h: '$$mdi:lightbulb$$'}
+  - {t: Hue-, h: '$$mdi:lightbulb$$'}
+  - {t: Bri-, h: '$$mdi:lightbulb$$'}
+  - {t: Effects, h: '$$mdi:lightbulb$$'}
   - ''
   - ''
   - ''
