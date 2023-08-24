@@ -101,6 +101,8 @@ parse_config:
     '&bt_1': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-1$$}
     '&bt_2': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-2$$}
     '&bt_3': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-3$$}
+    '&bt BT_CLR': {h: $$mdi:bluetooth$$ , t: 'Clear'}
+    '&bt BT_CLR_ALL': {h: $$mdi:bluetooth$$ , t: 'Clear All'}
     '&bootloader': Boot
     '&sys_reset': Reset
     '&caps_word': 'Caps Word'
