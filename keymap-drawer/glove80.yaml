@@ -163,7 +163,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Magic:
-  - BT CLR
+  - {t: Clear, h: '$$mdi:bluetooth$$'}
   - ''
   - ''
   - ''
@@ -172,7 +172,7 @@ layers:
   - ''
   - ''
   - ''
-  - BT CLR ALL
+  - {t: Clear All, h: '$$mdi:bluetooth$$'}
   - ''
   - ''
   - ''
