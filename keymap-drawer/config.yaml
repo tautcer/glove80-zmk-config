@@ -94,7 +94,6 @@ draw_config:
     }
     /* End Tabler Icons Cleanup */
 parse_config:
-  mark_alternate_layer_activators: false
   raw_binding_map:
     '&out OUT_USB': '$$mdi:usb$$'
     '&bt_sel 0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
@@ -106,6 +105,7 @@ parse_config:
     '&bootloader': Boot
     '&sys_reset': Reset
     '&caps_word': 'Caps Word'
+    '&smart_shft': 'Smart Shift'
     TO_MAGIC: '$$mdi:auto-fix$$'
     IN_SRC: '$$mdi:web$$'
     MIC_MUTE: '$$mdi:microphone$$'
@@ -132,7 +132,48 @@ parse_config:
     U_MS_R: {h: $$mdi:mouse$$, t: $$mdi:arrow-right$$}
     U_WH_U: {h: $$mdi:tire$$, t: $$mdi:arrow-up$$}
     U_WH_D: {h: $$mdi:tire$$, t: $$mdi:arrow-down$$}
+
+  zmk_combos:
+    combo_copy: {align: right}
+
   zmk_keycode_map:
+    HOME: Home
+    END: End
+    PG_UP: PgUp
+    PG_DN: PgDn
+    ESC: Esc
+    C_BRI_DN: $$tabler:brightness-down$$
+    C_BRI_UP: $$tabler:brightness-up$$
+    C_NEXT: $$mdi:skip-next$$
+    C_PP: $$mdi:play-pause$$
+    C_PREV: $$mdi:skip-previous$$
+    C_MUTE: $$mdi:volume-low$$
+    C_VOL_DN: $$mdi:volume-medium$$
+    C_VOL_UP: $$mdi:volume-high$$
+    TAB: $$mdi:keyboard-tab$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
+    RET: ⮐
+    BACKSPACE: $$mdi:backspace-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+    SPACE: $$mdi:keyboard-space$$
+    LG(C): $$mdi:content-copy$$
+
+    # defaults
     EXCLAMATION: '!'
     EXCL: '!'
     AT_SIGN: '@'
@@ -197,35 +238,3 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    C_BRI_DN: $$tabler:brightness-down$$
-    C_BRI_UP: $$tabler:brightness-up$$
-    C_NEXT: $$mdi:skip-next$$
-    C_PP: $$mdi:play-pause$$
-    C_PREV: $$mdi:skip-previous$$
-    C_MUTE: $$mdi:volume-low$$
-    C_VOL_DN: $$mdi:volume-medium$$
-    C_VOL_UP: $$mdi:volume-high$$
-    TAB: $$mdi:keyboard-tab$$
-    LGUI: $$mdi:apple-keyboard-command$$
-    RGUI: $$mdi:apple-keyboard-command$$
-    LALT: $$mdi:apple-keyboard-option$$
-    RALT: $$mdi:apple-keyboard-option$$
-    LSHIFT: $$mdi:apple-keyboard-shift$$
-    LSHFT: $$mdi:apple-keyboard-shift$$
-    RSHIFT: $$mdi:apple-keyboard-shift$$
-    RSHFT: $$mdi:apple-keyboard-shift$$
-    RCTRL: $$mdi:apple-keyboard-control$$
-    LCTRL: $$mdi:apple-keyboard-control$$
-    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
-    UP: $$mdi:arrow-up$$
-    DOWN: $$mdi:arrow-down$$
-    LEFT: $$mdi:arrow-left$$
-    RIGHT: $$mdi:arrow-right$$
-    RETURN: ⮐
-    BACKSPACE: $$mdi:backspace-outline$$
-    DELETE: $$mdi:backspace-reverse-outline$$
-    DEL: $$mdi:backspace-reverse-outline$$
-    SPACE: $$mdi:keyboard-space$$
-    LG(C): $$mdi:content-copy$$
-  zmk_combos:
-    combo_copy: {align: right}
