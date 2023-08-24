@@ -186,11 +186,11 @@ layers:
   - ''
   - ''
   - ''
-  - RGB SPI
-  - RGB SAI
-  - RGB HUI
-  - RGB BRI
-  - RGB TOG
+  - {t: Spd+, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Sat+, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Hue+, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Bri+, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Toggle, h: '$$mdi:lightbulb-outline$$'}
   - ''
   - ''
   - ''
@@ -198,11 +198,11 @@ layers:
   - ''
   - ''
   - Boot
-  - RGB SPD
-  - RGB SAD
-  - RGB HUD
-  - RGB BRD
-  - RGB EFF
+  - {t: Spd-, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Sat-, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Hue-, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Bri-, h: '$$mdi:lightbulb-outline$$'}
+  - {t: Effects, h: '$$mdi:lightbulb-outline$$'}
   - ''
   - ''
   - ''
