@@ -113,6 +113,16 @@ parse_config:
     RAYCAST: '$$mdi:magnify$$'
     EMOJI: '$$mdi:emoticon-happy-outline$$'
     SCRNSHT: '$$mdi:monitor-screenshot$$'
+    RGB_SPI: {h: $$mdi:lightbulb-outline$$, t: 'Spd+'}
+    RGB_SPD: {h: $$mdi:lightbulb-outline$$, t: 'Spd-'}
+    RGB_SAI: {h: $$mdi:lightbulb-outline$$, t: 'Sat+'}
+    RGB_SAD: {h: $$mdi:lightbulb-outline$$, t: 'Sat-'}
+    RGB_HUI: {h: $$mdi:lightbulb-outline$$, t: 'Hue+'}
+    RGB_HUD: {h: $$mdi:lightbulb-outline$$, t: 'Hue-'}
+    RGB_BRI: {h: $$mdi:lightbulb-outline$$, t: 'Bri+'}
+    RGB_BRD: {h: $$mdi:lightbulb-outline$$, t: 'Bri-'}
+    RGB_TOG: {h: $$mdi:lightbulb-outline$$, t: 'Toggle'}
+    RGB_EFF: {h: $$mdi:lightbulb-outline$$, t: 'Effects'}
     U_BTN1: {h: $$mdi:mouse$$, t: $$mdi:numeric-1$$}
     U_BTN2: {h: $$mdi:mouse$$, t: $$mdi:numeric-2$$}
     U_BTN3: {h: $$mdi:mouse$$, t: $$mdi:numeric-3$$}
