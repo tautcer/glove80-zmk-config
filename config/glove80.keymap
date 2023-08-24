@@ -125,20 +125,8 @@ ZMK_BEHAVIOR(rgb_ug_status_macro, macro,
     bindings = <&rgb_ug RGB_STATUS>;
 )
 
-ZMK_BEHAVIOR(bt_0, macro,
-    bindings = <&out OUT_BLE>, <&bt BT_SEL 0>;
-)
-
-ZMK_BEHAVIOR(bt_1, macro,
-    bindings = <&out OUT_BLE>, <&bt BT_SEL 1>;
-)
-
-ZMK_BEHAVIOR(bt_2, macro,
-    bindings = <&out OUT_BLE>, <&bt BT_SEL 2>;
-)
-
-ZMK_BEHAVIOR(bt_3, macro,
-    bindings = <&out OUT_BLE>, <&bt BT_SEL 3>;
+ZMK_BEHAVIOR(bt_sel, macro_one_param,
+    bindings = <&out OUT_BLE>, <&macro_param_1to2>, <&bt BT_SEL MACRO_PLACEHOLDER>;
 )
 
 #define XXX  &none
@@ -217,11 +205,11 @@ GLV80_LAYER(Magic,
      XXX           XXX               XXX               XXX               XXX                                 ,           XXX     XXX     XXX     XXX     XXX
 // ╰─────────────┴─────────────────┴─────────────────┴─────────────────┴─────────────────╯                             ╰───────┴───────┴───────┴───────┴────────────────╯
                                                                                                              ,
-//                                                                       ╭───────┬───────┬──────────────╮         ╭───────┬───────┬───────╮
-                                                                           &bt_2   &bt_3   XXX                      XXX     XXX     XXX
-/*                                                                       ├───────┼───────┼──────────────┤ */ , /* ├───────┼───────┼───────┤ */
-                                                                           &bt_0   &bt_1   &out OUT_USB             XXX     XXX     XXX
-//                                                                       ╰───────┴───────┴──────────────╯         ╰───────┴───────┴───────╯
+//                                                               ╭───────────┬───────────┬──────────────╮         ╭───────┬───────┬───────╮
+                                                                   &bt_sel 2   &bt_sel 3   XXX                      XXX     XXX     XXX
+/*                                                               ├───────────┼───────────┼──────────────┤ */ , /* ├───────┼───────┼───────┤ */
+                                                                   &bt_sel 0   &bt_sel 1   &out OUT_USB             XXX     XXX     XXX
+//                                                               ╰───────────┴───────────┴──────────────╯         ╰───────┴───────┴───────╯
 )
 
 GLV80_LAYER(Symbol,

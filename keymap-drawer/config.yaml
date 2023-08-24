@@ -97,10 +97,10 @@ parse_config:
   mark_alternate_layer_activators: false
   raw_binding_map:
     '&out OUT_USB': '$$mdi:usb$$'
-    '&bt_0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
-    '&bt_1': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-1$$}
-    '&bt_2': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-2$$}
-    '&bt_3': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-3$$}
+    '&bt_sel 0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
+    '&bt_sel 1': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-1$$}
+    '&bt_sel 2': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-2$$}
+    '&bt_sel 3': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-3$$}
     '&bt BT_CLR': {h: $$mdi:bluetooth$$ , t: 'Clear'}
     '&bt BT_CLR_ALL': {h: $$mdi:bluetooth$$ , t: 'Clear All'}
     '&bootloader': Boot
