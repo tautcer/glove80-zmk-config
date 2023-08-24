@@ -8,6 +8,7 @@ on:
       - 'README.md'
       - 'LICENSE'
       - 'keymap-drawer/**'
+      - '.github/workflows/draw-keymap.yml'
 
 jobs:
   build:
