@@ -1,4 +1,5 @@
 draw_config:
+  shrink_wide_legends: 5
   svg_style: |
     /* inherit to force styles through use tags*/
     svg path {
@@ -71,8 +72,8 @@ draw_config:
     }
 
     /* lighter symbol for transparent keys */
-    text.trans {
-        fill: #7b7e81;
+    text.trans, .glyph.trans {
+        opacity: 0.4;
     }
 
     /* styling for combo dendrons */
@@ -93,7 +94,12 @@ draw_config:
         visibility: collapse;
     }
     /* End Tabler Icons Cleanup */
+
 parse_config:
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
+
   raw_binding_map:
     '&out OUT_USB': '$$mdi:usb$$'
     '&bt_sel 0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
