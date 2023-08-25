@@ -25,14 +25,14 @@ layers:
   - '-'
   - $$mdi:keyboard-tab$$
   - Q
-  - W
+  - {t: W, h: '$$mdi:apple-keyboard-option$$'}
   - E
   - R
   - T
   - Y
   - U
   - I
-  - O
+  - {t: O, h: '$$mdi:apple-keyboard-option$$'}
   - P
   - \
   - {t: Esc, h: '$$mdi:apple-keyboard-control$$'}
@@ -49,8 +49,8 @@ layers:
   - ''''
   - '`'
   - Z
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - X
+  - C
   - V
   - B
   - Smart Shift
@@ -62,7 +62,7 @@ layers:
   - N
   - M
   - ','
-  - {t: ., h: '$$mdi:apple-keyboard-option$$'}
+  - .
   - /
   - '='
   - $$mdi:auto-fix$$
@@ -146,7 +146,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:auto-fix$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -162,6 +162,168 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  Symbol:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ','
+  - '['
+  - (
+  - )
+  - ']'
+  - ;
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '~'
+  - '{'
+  - '"'
+  - '`'
+  - '}'
+  - '?'
+  - ''
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-option$$
+  - ''
+  - ''
+  - '#'
+  - ^
+  - '='
+  - _
+  - $
+  - '*'
+  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - ''
+  - '!'
+  - <
+  - '|'
+  - '-'
+  - '>'
+  - /
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ','
+  - '&'
+  - +
+  - ;
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  Mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-option$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:arrow-up$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:arrow-up$$', h: '$$mdi:tire$$'}
+  - ''
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - ''
+  - {t: '$$mdi:arrow-left$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:arrow-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:arrow-right$$', h: '$$mdi:mouse$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:arrow-down$$', h: '$$mdi:tire$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Base
+  - {t: '$$mdi:numeric-2$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:numeric-1$$', h: '$$mdi:mouse$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   Magic:
   - {t: Clear, h: '$$mdi:bluetooth$$'}
   - ''
@@ -238,168 +400,6 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  Symbol:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ','
-  - '['
-  - (
-  - )
-  - ']'
-  - ;
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '~'
-  - '{'
-  - '"'
-  - '`'
-  - '}'
-  - '?'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '#'
-  - ^
-  - '='
-  - _
-  - $
-  - '*'
-  - ''
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - ''
-  - '!'
-  - <
-  - '|'
-  - '-'
-  - '>'
-  - /
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$mdi:apple-keyboard-option$$
-  - ''
-  - ''
-  - ''
-  - ','
-  - '&'
-  - +
-  - ;
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  Mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:arrow-up$$', h: '$$mdi:mouse$$'}
-  - {t: '$$mdi:arrow-up$$', h: '$$mdi:tire$$'}
-  - ''
-  - ''
-  - ''
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-shift$$
-  - ''
-  - ''
-  - {t: '$$mdi:arrow-left$$', h: '$$mdi:mouse$$'}
-  - {t: '$$mdi:arrow-down$$', h: '$$mdi:mouse$$'}
-  - {t: '$$mdi:arrow-right$$', h: '$$mdi:mouse$$'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:arrow-down$$', h: '$$mdi:tire$$'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Base
-  - {t: '$$mdi:numeric-2$$', h: '$$mdi:mouse$$'}
-  - {t: '$$mdi:numeric-1$$', h: '$$mdi:mouse$$'}
   - ''
   - ''
   - ''
