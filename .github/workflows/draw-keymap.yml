@@ -19,3 +19,4 @@ jobs:
       config_path: keymap-drawer/config.yaml
       output_folder: keymap-drawer
       commit_message: 'Draw keymap'
+      install_branch: main

@@ -1,5 +1,13 @@
 draw_config:
   shrink_wide_legends: 5
+  draw_key_sides: true
+  key_side_pars:
+    rel_x: 0
+    rel_y: 1
+    rel_w: 2
+    rel_h: 4
+    rx: 6
+    ry: 6
   svg_style: |
     /* inherit to force styles through use tags*/
     svg path {
@@ -19,6 +27,11 @@ draw_config:
         fill: #f6f8fa;
         stroke: #c9cccf;
         stroke-width: 1;
+    }
+
+    /* default key side styling, only used is draw_key_sides is set */
+    rect.side {
+        filter: brightness(90%);
     }
 
     /* color accent for combo boxes */
@@ -72,8 +85,8 @@ draw_config:
     }
 
     /* lighter symbol for transparent keys */
-    text.trans, .glyph.trans {
-        opacity: 0.4;
+    text.trans {
+        fill: #7b7e81;
     }
 
     /* styling for combo dendrons */
@@ -94,6 +107,17 @@ draw_config:
         visibility: collapse;
     }
     /* End Tabler Icons Cleanup */
+
+    /* Custom CSS */
+    rect.side {
+        stroke: #24292e;
+    }
+
+    /* lighter symbol for transparent keys */
+    text.trans, .glyph.trans {
+        fill: inherit;
+        opacity: 0.4;
+    }
 
 parse_config:
   trans_legend:
