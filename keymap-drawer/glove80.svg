@@ -143,7 +143,7 @@
 
 </svg>
 </defs>/* end glyphs */
-<style>/* inherit to force styles through use tags*/
+<style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
 }
@@ -169,7 +169,7 @@ rect.side {
 }
 
 /* color accent for combo boxes */
-rect.combo {
+rect.combo, rect.combo-separate {
     fill: #cdf;
 }
 
