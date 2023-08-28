@@ -9,7 +9,7 @@ draw_config:
     rx: 6
     ry: 6
   svg_style: |
-    /* inherit to force styles through use tags*/
+    /* inherit to force styles through use tags */
     svg path {
         fill: inherit;
     }
@@ -35,7 +35,7 @@ draw_config:
     }
 
     /* color accent for combo boxes */
-    rect.combo {
+    rect.combo, rect.combo-separate {
         fill: #cdf;
     }
 
