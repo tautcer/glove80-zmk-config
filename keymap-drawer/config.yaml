@@ -13,6 +13,7 @@ draw_config:
     svg path {
         fill: inherit;
     }
+
     /* font and background color specifications */
     svg.keymap {
         font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
@@ -101,10 +102,11 @@ draw_config:
     .icon-tabler > path {
         fill: inherit;
         stroke: inherit;
+        stroke-width: 2;
     }
     /* hide tabler's default box */
     .icon-tabler > path[stroke="none"][fill="none"] {
-        visibility: collapse;
+        visibility: hidden;
     }
     /* End Tabler Icons Cleanup */
 
