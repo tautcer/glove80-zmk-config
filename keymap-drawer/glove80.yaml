@@ -74,8 +74,8 @@ layers:
   - {t: Esc, h: Lower}
   - $$mdi:microphone$$
   - Mouse
-  - {t: '$$mdi:backspace-outline$$', h: Symbol}
-  - $$mdi:keyboard-space$$
+  - $$mdi:backspace-outline$$
+  - {t: '$$mdi:keyboard-space$$', h: Symbol}
   - (
   - '['
   - ']'
@@ -236,8 +236,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - ''
   - ''
