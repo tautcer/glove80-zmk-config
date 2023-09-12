@@ -63,6 +63,8 @@ parse_config:
     U_MS_R: {h: $$mdi:mouse$$, t: $$mdi:arrow-right$$}
     U_WH_U: {h: $$mdi:tire$$, t: $$mdi:arrow-up$$}
     U_WH_D: {h: $$mdi:tire$$, t: $$mdi:arrow-down$$}
+    '&macswap': {h: $$mdi:apple$$, t: $$mdi:swap-horizontal-bold$$}
+    '&winswap': {h: $$mdi:microsoft-windows$$, t: $$mdi:swap-horizontal-bold$$}
 
   zmk_combos:
     combo_copy: {align: right}
