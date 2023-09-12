@@ -130,8 +130,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&winswap'
-  - '&macswap'
+  - {t: '$$mdi:swap-horizontal-bold$$', h: '$$mdi:microsoft-windows$$'}
+  - {t: '$$mdi:swap-horizontal-bold$$', h: '$$mdi:apple$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -454,8 +454,8 @@ layers:
   - ''
   - ''
   - ''
-  - '&winswap'
-  - '&macswap'
+  - {t: '$$mdi:swap-horizontal-bold$$', h: '$$mdi:microsoft-windows$$'}
+  - {t: '$$mdi:swap-horizontal-bold$$', h: '$$mdi:apple$$'}
   - ''
   - ''
   - ''
