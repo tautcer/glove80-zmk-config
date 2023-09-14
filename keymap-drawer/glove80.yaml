@@ -25,14 +25,14 @@ layers:
   - '-'
   - $$mdi:keyboard-tab$$
   - Q
-  - {t: W, h: '$$mdi:apple-keyboard-option$$'}
+  - W
   - E
   - R
   - T
   - Y
   - U
   - I
-  - {t: O, h: '$$mdi:apple-keyboard-option$$'}
+  - O
   - P
   - \
   - {t: Esc, h: '$$mdi:apple-keyboard-control$$'}
