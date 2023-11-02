@@ -119,13 +119,13 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
 // cmd+tab swapper, requires PR #1366
 ZMK_BEHAVIOR(macswap, tri_state,
     bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-    ignored-key-positions = <LM1>;
+    ignored-key-positions = <LM1 RM0 RM1 RM2 RM3>;
 )
 
 // alt+tab swapper, requires PR #1366
 ZMK_BEHAVIOR(winswap, tri_state,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-    ignored-key-positions = <LM1>;
+    ignored-key-positions = <LM1 RM0 RM1 RM2 RM3>;
 )
 
 /* Standard Glove80 behaviors and macros */
