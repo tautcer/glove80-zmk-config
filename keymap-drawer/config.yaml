@@ -111,21 +111,21 @@ parse_config:
     EXCL: '!'
     AT_SIGN: '@'
     AT: '@'
-    LS(2): '@'
+    LS(N2): '@'
     HASH: '#'
     POUND: '#'
     DOLLAR: $
     DLLR: $
     PERCENT: '%'
     PRCNT: '%'
-    LS(5): '%'
+    LS(N5): '%'
     CARET: ^
     AMPERSAND: '&'
     AMPS: '&'
     ASTERISK: '*'
     ASTRK: '*'
     STAR: '*'
-    LS(8): '*'
+    LS(N8): '*'
     LEFT_PARENTHESIS: (
     LPAR: (
     RIGHT_PARENTHESIS: )
