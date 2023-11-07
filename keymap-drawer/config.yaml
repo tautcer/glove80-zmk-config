@@ -111,18 +111,21 @@ parse_config:
     EXCL: '!'
     AT_SIGN: '@'
     AT: '@'
+    LS(2): '@'
     HASH: '#'
     POUND: '#'
     DOLLAR: $
     DLLR: $
     PERCENT: '%'
     PRCNT: '%'
+    LS(5): '%'
     CARET: ^
     AMPERSAND: '&'
     AMPS: '&'
     ASTERISK: '*'
     ASTRK: '*'
     STAR: '*'
+    LS(8): '*'
     LEFT_PARENTHESIS: (
     LPAR: (
     RIGHT_PARENTHESIS: )
@@ -145,6 +148,7 @@ parse_config:
     SEMICOLON: ;
     SEMI: ;
     COLON: ':'
+    LS(SEMI): ':'
     SINGLE_QUOTE: ''''
     SQT: ''''
     APOSTROPHE: <
