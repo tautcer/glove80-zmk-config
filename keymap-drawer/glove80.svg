@@ -1425,7 +1425,7 @@ text.trans, .glyph.trans {
 <g transform="translate(369, 379) rotate(40.0)" class="key keypos-70">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 62%">LS(SEMI)</tspan></text>
+<text x="0" y="-1" class="key tap">:</text>
 </g>
 <g transform="translate(410, 427) rotate(60.0)" class="key keypos-71">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
