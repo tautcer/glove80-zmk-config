@@ -114,6 +114,7 @@ parse_config:
     LS(N2): '@'
     HASH: '#'
     POUND: '#'
+    LS(N3): '#'
     DOLLAR: $
     DLLR: $
     PERCENT: '%'
@@ -122,6 +123,7 @@ parse_config:
     CARET: ^
     AMPERSAND: '&'
     AMPS: '&'
+    LS(N7): '&'
     ASTERISK: '*'
     ASTRK: '*'
     STAR: '*'
