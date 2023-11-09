@@ -197,12 +197,12 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - ''
   - ''
-  - '#'
+  - '['
   - ^
   - '='
   - _
   - $
-  - '*'
+  - ']'
   - ''
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
@@ -227,11 +227,11 @@ layers:
   - ''
   - ''
   - ''
-  - '?'
-  - '['
+  - ''
   - '&'
+  - '#'
+  - '*'
   - +
-  - ']'
   - '%'
   - ;
   - ':'
