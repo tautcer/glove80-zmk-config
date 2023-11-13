@@ -1148,7 +1148,6 @@ text.trans, .glyph.trans {
 <g transform="translate(28, 112)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">@</text>
 </g>
 <g transform="translate(84, 112)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1236,10 +1235,12 @@ text.trans, .glyph.trans {
 <g transform="translate(756, 140)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(812, 140)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-command"/>
 </g>
 <g transform="translate(868, 140)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1249,6 +1250,7 @@ text.trans, .glyph.trans {
 <g transform="translate(924, 168)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(980, 168)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1257,7 +1259,7 @@ text.trans, .glyph.trans {
 <g transform="translate(28, 224)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">[</text>
+<text x="0" y="-1" class="key tap">#</text>
 </g>
 <g transform="translate(84, 224)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1282,7 +1284,7 @@ text.trans, .glyph.trans {
 <g transform="translate(308, 196)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">]</text>
+<text x="0" y="-1" class="key tap">*</text>
 </g>
 <g transform="translate(700, 196)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1291,22 +1293,22 @@ text.trans, .glyph.trans {
 <g transform="translate(756, 196)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-shift"/>
+<text x="0" y="-1" class="key tap">BSPC</text>
 </g>
 <g transform="translate(812, 196)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-command"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:keyboard-tab"/>
 </g>
 <g transform="translate(868, 196)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-option"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
 </g>
 <g transform="translate(924, 224)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-control"/>
+<text x="0" y="-1" class="key tap">ENTER</text>
 </g>
 <g transform="translate(980, 224)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1376,10 +1378,12 @@ text.trans, .glyph.trans {
 <g transform="translate(756, 252)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:backspace-reverse-outline"/>
 </g>
 <g transform="translate(812, 252)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 71%">LS(TAB)</tspan></text>
 </g>
 <g transform="translate(868, 252)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1396,6 +1400,7 @@ text.trans, .glyph.trans {
 <g transform="translate(28, 336)" class="key keypos-64">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
+<text x="0" y="-1" class="key tap">@</text>
 </g>
 <g transform="translate(84, 336)" class="key keypos-65">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1405,12 +1410,12 @@ text.trans, .glyph.trans {
 <g transform="translate(140, 308)" class="key keypos-66">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">#</text>
+<text x="0" y="-1" class="key tap">[</text>
 </g>
 <g transform="translate(196, 308)" class="key keypos-67">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">*</text>
+<text x="0" y="-1" class="key tap">]</text>
 </g>
 <g transform="translate(252, 308)" class="key keypos-68">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
