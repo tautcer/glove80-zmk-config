@@ -84,6 +84,7 @@ parse_config:
     C_VOL_DN: $$mdi:volume-medium$$
     C_VOL_UP: $$mdi:volume-high$$
     TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
     LGUI: $$mdi:apple-keyboard-command$$
     RGUI: $$mdi:apple-keyboard-command$$
     LALT: $$mdi:apple-keyboard-option$$
@@ -101,6 +102,7 @@ parse_config:
     RIGHT: $$mdi:arrow-right$$
     RET: $$mdi:keyboard-return$$
     BACKSPACE: $$mdi:backspace-outline$$
+    BSPC: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
     SPACE: $$mdi:keyboard-space$$
