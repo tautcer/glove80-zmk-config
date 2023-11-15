@@ -101,6 +101,8 @@ parse_config:
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
     RET: $$mdi:keyboard-return$$
+    RETURN: $$mdi:keyboard-return$$
+    ENTER: $$mdi:keyboard-return$$
     BACKSPACE: $$mdi:backspace-outline$$
     BSPC: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
