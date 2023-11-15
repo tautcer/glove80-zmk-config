@@ -204,7 +204,7 @@ layers:
   - $
   - '*'
   - ''
-  - BSPC
+  - $$mdi:backspace-outline$$
   - $$mdi:keyboard-tab$$
   - $$mdi:keyboard-space$$
   - ENTER
@@ -223,7 +223,7 @@ layers:
   - ''
   - ''
   - $$mdi:backspace-reverse-outline$$
-  - LS(TAB)
+  - $$mdi:keyboard-tab-reverse$$
   - ''
   - ''
   - ''
