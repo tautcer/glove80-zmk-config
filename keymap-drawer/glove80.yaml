@@ -117,10 +117,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
