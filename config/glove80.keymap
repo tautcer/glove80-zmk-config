@@ -128,6 +128,18 @@ ZMK_BEHAVIOR(winswap, tri_state,
     ignored-key-positions = <LM1 RM0 RM1 RM2 RM3>;
 )
 
+// comma, semicolon swapper
+ZMK_BEHAVIOR(comma_semi, mod_morph,
+    bindings = <&kp COMMA>, <&kp SEMI>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// dot, colon swapper
+ZMK_BEHAVIOR(dot_colon, mod_morph,
+    bindings = <&kp DOT>, <&kp COLON>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 /* Standard Glove80 behaviors and macros */
 
 // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
@@ -175,19 +187,19 @@ GLV80_LAYER(Base,
 // ├───────────────┼────────────────────┼───────────────────┼───────────────────┼─────────────────────┼────────╮   ╭────────┼─────────────────────┼───────────────────┼─────────────────────┼───────────────────────┼───────────┤
      &kp GRAVE       &kp N1               &kp N2              &kp N3              &kp N4                &kp N5       &kp N6   &kp N7                &kp N8              &kp N9                &kp N0                  &kp MINUS
 // ├───────────────┼────────────────────┼───────────────────┼───────────────────┼─────────────────────┼────────┤   ├────────┼─────────────────────┼───────────────────┼─────────────────────┼───────────────────────┼───────────┤
-     &kp TAB         &kp Q                &kp W               &kp E               &kp R                 &kp T        &kp Y    &kp U                 &kp I               &kp O                 &kp P                   &kp BSLH
+     &kp TAB         &kp Q                &kp W               &kp F               &kp P                 &kp B        &kp J    &kp L                 &kp U               &kp Y                 &kp SEMI                &kp BSLH
 // ├───────────────┼────────────────────┼───────────────────┼───────────────────┼─────────────────────┼────────┤   ├────────┼─────────────────────┼───────────────────┼─────────────────────┼───────────────────────┼───────────┤
-     &mt LCTRL ESC   &hml_homes LCTRL A   &hml_homes LALT S   &hml_homes LGUI D   &hml_shift LSHIFT F   &kp G        &kp H    &hmr_shift RSHIFT J   &hmr_homes RGUI K   &hmr_homes LALT L     &hmr_homes RCTRL SEMI   &kp SQT
+     &mt LCTRL ESC   &hml_homes LCTRL A   &hml_homes LALT R   &hml_homes LGUI S   &hml_shift LSHIFT T   &kp G        &kp M    &hmr_shift RSHIFT N   &hmr_homes RGUI E   &hmr_homes LALT I     &hmr_homes RCTRL O      &kp SQT
 // ├───────────────┼────────────────────┼───────────────────┼───────────────────┼─────────────────────┼────────┤   ├────────┼─────────────────────┼───────────────────┼─────────────────────┼───────────────────────┼───────────┤
-     &kp GRAVE       &kp Z                &kp X               &kp C               &kp V                 &kp B    ,   &kp N    &kp M                 &kp COMMA           &kp DOT               &kp FSLH                &kp EQUAL
+     &kp GRAVE       &kp Z                &kp X               &kp C               &kp D                 &kp V    ,   &kp K    &kp H                 &comma_semi         &dot_colon            &kp FSLH                &kp EQUAL
 // ├───────────────┼────────────────────┼───────────────────┼───────────────────┼─────────────────────┼────────╯   ╰────────┼─────────────────────┼───────────────────┼─────────────────────┼───────────────────────┼───────────┤
-     TO_MAGIC        &kp HOME             &kp END             &kp LEFT            &kp RIGHT                      ,            &kp LPAR              &kp LBKT            &kp RBKT              &kp RPAR                &kp PG_DN
+     TO_MAGIC        &kp HOME             &kp END             &kp LEFT            &kp RIGHT                      ,            &kp DOWN              &kp UP              &kp RBKT              &kp RPAR                &kp PG_DN
 // ╰───────────────┴────────────────────┴───────────────────┴───────────────────┴─────────────────────╯                     ╰─────────────────────┴───────────────────┴─────────────────────┴───────────────────────┴───────────╯
                                                                                                                  ,
 //                                                              ╭─────────────┬──────────────────┬──────────╮         ╭───────────┬───────────────┬─────────────────────╮
-                                                                  &smart_shft   IN_SRC             EMOJI                ONEPASS     RAYCAST         &kp RET
+                                                                  &smart_shft    XXX                XXX                 XXX         XXX             XXX
 /*                                                              ├─────────────┼──────────────────┼──────────┤ */ , /* ├───────────┼───────────────┼─────────────────────┤ */
-                                                                  &kp TAB       &thumb LOWER ESC   MIC_MUTE             &to MOUSE   &kp BACKSPACE   &space SYMBOL SPACE
+                                                                  &kp BACKSPACE  &thumb LOWER TAB   XXX                 &to MOUSE   &kp RET         &space SYMBOL SPACE
 //                                                              ╰─────────────┴──────────────────┴──────────╯         ╰───────────┴───────────────┴─────────────────────╯
 )
 
