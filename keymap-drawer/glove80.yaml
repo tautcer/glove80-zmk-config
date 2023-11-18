@@ -26,43 +26,43 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
   - \
   - {t: Esc, h: '$$mdi:apple-keyboard-control$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - ''''
   - '`'
   - Z
   - X
   - C
+  - D
   - V
-  - B
   - Smart Shift
-  - $$mdi:web$$
-  - $$mdi:emoticon-happy-outline$$
-  - $$mdi:lock-outline$$
-  - $$mdi:magnify$$
-  - $$mdi:keyboard-return$$
-  - N
-  - M
-  - ','
-  - .
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - K
+  - H
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - /
   - '='
   - $$mdi:auto-fix$$
@@ -70,14 +70,14 @@ layers:
   - End
   - $$mdi:arrow-left$$
   - $$mdi:arrow-right$$
-  - $$mdi:keyboard-tab$$
-  - {t: Esc, h: Lower}
-  - $$mdi:microphone$$
-  - Mouse
   - $$mdi:backspace-outline$$
+  - {t: '$$mdi:keyboard-tab$$', h: Lower}
+  - ''
+  - Mouse
+  - $$mdi:keyboard-return$$
   - {t: '$$mdi:keyboard-space$$', h: Symbol}
-  - (
-  - '['
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-up$$
   - ']'
   - )
   - PgDn
