@@ -33,7 +33,7 @@ layers:
   - L
   - U
   - Y
-  - ;
+  - ''''
   - \
   - {t: Esc, h: '$$mdi:apple-keyboard-control$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
@@ -74,8 +74,8 @@ layers:
   - $$mdi:keyboard-tab$$
   - ''
   - Mouse
-  - $$mdi:keyboard-return$$
-  - {t: '$$mdi:keyboard-space$$', h: Symbol}
+  - {t: '$$mdi:keyboard-return$$', h: Symbol}
+  - $$mdi:keyboard-space$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-up$$
   - ']'
@@ -130,8 +130,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:swap-horizontal-bold$$', h: '$$mdi:microsoft-windows$$'}
-  - {t: '$$mdi:swap-horizontal-bold$$', h: '$$mdi:apple$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -175,10 +175,10 @@ layers:
   - ''
   - ''
   - '`'
-  - (
-  - )
-  - ;
-  - .
+  - ^
+  - '|'
+  - ','
+  - ''
   - ''
   - ''
   - ''
@@ -198,10 +198,10 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - ''
   - '#'
-  - ^
+  - (
   - '='
   - _
-  - $
+  - )
   - '*'
   - ''
   - $$mdi:backspace-outline$$
@@ -210,14 +210,14 @@ layers:
   - $$mdi:keyboard-return$$
   - ''
   - '~'
-  - <
-  - '|'
-  - '-'
-  - '>'
+  - '['
+  - $
+  - '%'
+  - ']'
   - /
   - \
+  - ','
   - .
-  - '*'
   - ''
   - ''
   - ''
@@ -229,15 +229,15 @@ layers:
   - ''
   - '@'
   - '&'
-  - '['
-  - ']'
+  - <
+  - '>'
   - +
-  - '%'
+  - '-'
   - ;
   - ':'
   - ''
-  - ''
   - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -478,7 +478,7 @@ layers:
   - $$mdi:backspace-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Base
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -526,7 +526,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: LC(C), s: LC(A)}
   - +
   - '4'
   - '5'
@@ -538,7 +538,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: LC(V), s: LC(Z)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -567,8 +567,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [37, 49]
-  k: $$mdi:content-copy$$
-  l: [Base]
-  a: right
