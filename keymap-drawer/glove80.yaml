@@ -35,7 +35,7 @@ layers:
   - Y
   - ''''
   - \
-  - {t: Esc, h: '$$mdi:apple-keyboard-control$$'}
+  - Esc
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
@@ -109,7 +109,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Typing
+  - {t: Typing, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -227,7 +227,7 @@ layers:
   - ''
   - ''
   - ''
-  - '@'
+  - '#'
   - '&'
   - <
   - '>'
@@ -316,7 +316,7 @@ layers:
   - ''
   - ''
   - ''
-  - Base
+  - {t: Base, h: toggle}
   - {t: '$$mdi:numeric-2$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:numeric-1$$', h: '$$mdi:mouse$$'}
   - ''
