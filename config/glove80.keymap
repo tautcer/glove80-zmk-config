@@ -227,21 +227,21 @@ GLV80_LAYER(Symbol,
 // ╭────────────┬────────────┬────────────┬────────────┬────────────╮                             ╭────────────┬─────────────┬────────────┬────────────┬────────────╮
      XXX          XXX          XXX          XXX          XXX                                        XXX          XXX           XXX          XXX          XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭────────────┼────────────┼─────────────┼────────────┼────────────┼────────────┤
-     XXX          &kp TILDE    &kp CARET    &kp PIPE     XXX          XXX              XXX          XXX          XXX           XXX          XXX          XXX
+     XXX          &kp GRAVE    &kp LPAR     &kp RPAR     &kp SEMI     &kp COMMA        XXX          XXX          XXX           XXX          XXX          XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┼────────────┼────────────┤
      &kp EXCL     &kp LBRC     &kp SQT      &kp DQT      &kp RBRC     &kp QMARK        XXX          &kp RSHIFT   &kp RGUI      &kp LALT     &kp RCTRL    XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┼────────────┼────────────┤
-     &kp AT       &kp LPAR     &kp EQUAL    &kp UNDER    &kp RPAR     &kp STAR         XXX          &kp BSPC     &kp TAB       &kp SPACE    &kp ENTER    XXX
+     &kp HASH     &kp CARET    &kp EQUAL    &kp UNDER    &kp DLLR     &kp STAR         XXX          &kp BSPC     &kp TAB       &kp SPACE    &kp ENTER    XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┼────────────┼────────────┤
-     &kp GRAVE    &kp LBKT     &kp LT       &kp GT       &kp RBKT     &kp FSLH     ,   XXX          &kp DEL      &kp LS(TAB)   XXX          XXX          XXX
+     &kp TILDE    &kp LT       &kp PIPE     &kp MINUS    &kp GT       &kp FSLH     ,   XXX          &kp DEL      &kp LS(TAB)   XXX          XXX          XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────╯   ╰────────────┼────────────┼─────────────┼────────────┼────────────┼────────────┤
-     &kp HASH     &kp AMPS     &kp DLLR     &kp PRCNT    &kp PLUS                  ,                XXX          XXX           XXX          XXX          XXX
+     &kp AT       &kp AMPS     &kp LBKT     &kp RBKT    &kp PLUS                  ,                XXX          XXX           XXX          XXX          XXX
 // ╰────────────┴────────────┴────────────┴────────────┴────────────╯                             ╰────────────┴─────────────┴────────────┴────────────┴────────────╯
                                                                                    ,
 //                                   ╭────────────┬────────────┬──────────────╮         ╭────────────┬────────────┬────────────╮
-                                       &kp BSLH     &kp COMMA    &kp DOT                  XXX          XXX          XXX
+                                       &kp BSLH     &kp DOT      &kp STAR                  XXX          XXX          XXX
 /*                                   ├────────────┼────────────┼──────────────┤ */ , /* ├────────────┼────────────┼────────────┤ */
-                                       &kp MINUS    &kp SEMI     &kp COLON                XXX          XXX          XXX
+                                       &kp PRCNT    &kp COLON    &kp SEMI                  XXX          XXX          XXX
 //                                   ╰────────────┴────────────┴──────────────╯         ╰────────────┴────────────┴────────────╯
 )
 
