@@ -12,6 +12,7 @@
  * edit it directly.
  */
 
+#define HOST_OS 1  // set to 1 for Linux, default is 0 (Windows)
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/outputs.h>
 
