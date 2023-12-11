@@ -165,7 +165,7 @@ ZMK_BEHAVIOR(bt_sel, macro_one_param,
     bindings = <&out OUT_BLE>, <&macro_param_1to2>, <&bt BT_SEL MACRO_PLACEHOLDER>;
 )
 
-ZMK_UNICODE_SINGLE(emd_pnd,  N2, N0, N1, N4)
+ZMK_UNICODE_SINGLE(pound, N0, N0, A, N3)  // £: U+00A3
 
 #define XXX  &none
 #define ___  &trans
@@ -229,7 +229,7 @@ GLV80_LAYER(Symbol,
 // ╭────────────┬────────────┬────────────┬────────────┬────────────╮                             ╭────────────┬─────────────┬────────────┬────────────┬────────────╮
      XXX          XXX          XXX          XXX          XXX                                        XXX          XXX           XXX          XXX          XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭────────────┼────────────┼─────────────┼────────────┼────────────┼────────────┤
-     &emd_pnd     &kp GRAVE    &kp LPAR     &kp RPAR     &kp SEMI     &kp COMMA        XXX          XXX          XXX           XXX          XXX          XXX
+     &pound       &kp GRAVE    &kp LPAR     &kp RPAR     &kp SEMI     &kp COMMA        XXX          XXX          XXX           XXX          XXX          XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┼────────────┼────────────┤
      &kp EXCL     &kp LBRC     &kp SQT      &kp DQT      &kp RBRC     &kp QMARK        XXX          &kp RSHIFT   &kp RGUI      &kp LALT     &kp RCTRL    XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼─────────────┼────────────┼────────────┼────────────┤
