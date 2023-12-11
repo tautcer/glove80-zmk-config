@@ -58,7 +58,7 @@ layers:
   - '&lower'
   - $$mdi:backspace-reverse-outline$$
   - ''
-  - ''
+  - $$mdi:apple-keyboard-shift$$
   - K
   - H
   - {t: ',', s: ;}
@@ -70,7 +70,7 @@ layers:
   - End
   - $$mdi:arrow-left$$
   - $$mdi:arrow-right$$
-  - {t: '$$mdi:backspace-outline$$', h: Nums}
+  - {t: '$$mdi:backspace-outline$$', h: Numbers}
   - $$mdi:keyboard-tab$$
   - ''
   - {t: Mouse, h: toggle}
@@ -173,7 +173,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&pound_lower'
   - '`'
   - (
   - )
@@ -268,7 +268,7 @@ layers:
   - ''
   - ''
   - ''
-  - $$mdi:apple-keyboard-option$$
+  - ''
   - ''
   - ''
   - ''
@@ -478,7 +478,7 @@ layers:
   - $$mdi:backspace-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Base
+  - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -515,24 +515,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - '%'
   - '7'
   - '8'
   - '9'
   - ':'
   - {t: '$$mdi:transfer$$', type: trans}
-  - Esc
+  - {t: Esc, h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: LC(C), s: LC(A)}
   - +
   - '4'
   - '5'
@@ -543,8 +537,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-outline$$
+  - {t: LC(V), s: LC(Z)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -562,7 +556,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace-outline$$', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - ','
