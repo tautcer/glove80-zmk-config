@@ -84,12 +84,12 @@ MAKE_HRMS(homes, "balanced",
     hold-trigger-on-release;  // wait for other home row mods
     tapping-term-ms = <270>;
     quick-tap-ms = <300>;
-    require-prior-idle-ms = <170>;
+    require-prior-idle-ms = <230>;
 )
 MAKE_HRMS(shift, "tap-preferred",
     tapping-term-ms = <170>;
     quick-tap-ms = <300>;
-    require-prior-idle-ms = <70>;
+    require-prior-idle-ms = <130>;
 )
 
 ZMK_BEHAVIOR(thumb, hold_tap,
