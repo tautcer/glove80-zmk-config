@@ -109,6 +109,7 @@ parse_config:
     DEL: $$mdi:backspace-reverse-outline$$
     SPACE: $$mdi:keyboard-space$$
     LG(C): $$mdi:content-copy$$
+    '&pound_lower': $$mdi:currency-gbp$$
 
     # defaults
     EXCLAMATION: '!'

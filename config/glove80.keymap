@@ -52,6 +52,35 @@
 
 #define NUMERIC  N0 N1 N2 N3 N4 N5 N6 N7 N8 N9
 
+#ifndef OPERATING_SYSTEM
+#define OPERATING_SYSTEM 1 // linux
+//#define OPERATING_SYSTEM 2 // macos
+//#define OPERATING_SYSTEM 3 // windows
+#endif
+#if OPERATING_SYSTEM == 2
+  #define _C         LG
+  #define _REDO      _C(LS(Z))
+  #define _POWER     K_POWER
+#else
+  #define _C         LC
+  #define _REDO      _C(Y)
+  #define _POWER     C_POWER
+#endif
+#define   _SLEEP     C_SLEEP
+#if OPERATING_SYSTEM == 3
+  #define _LOCK      LG(L)
+#elif OPERATING_SYSTEM == 2
+  #define _LOCK      _C(LC(Q))
+#elif OPERATING_SYSTEM == 1
+  #define _LOCK      K_LOCK
+#endif
+#define   _UNDO      _C(Z)
+#define   _CUT       _C(X)
+#define   _COPY      _C(C)
+#define   _PASTE     _C(V)
+#define   _FIND      _C(F)
+#define   _FIND_NEXT _C(G)
+#define   _FIND_PREV _C(LS(G))
 
 #define MAKE_HRMS(name, hold_tap_flavor, ...) \
     ZMK_BEHAVIOR(hml_ ## name, hold_tap, \
@@ -86,6 +115,7 @@ MAKE_HRMS(homes, "balanced",
     quick-tap-ms = <300>;
     require-prior-idle-ms = <230>;
 )
+
 MAKE_HRMS(shift, "tap-preferred",
     tapping-term-ms = <170>;
     quick-tap-ms = <300>;
@@ -167,6 +197,57 @@ ZMK_BEHAVIOR(bt_sel, macro_one_param,
 )
 
 ZMK_UNICODE_SINGLE(pound, N0, N0, A, N3)  // £: U+00A3
+
+/ {
+    macros {
+
+        //
+        // select a word (jumps to next word upon each successive invocation)
+        //
+        select_word: select_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SELECT_WORD";
+            #binding-cells = <0>;
+            bindings = <&select_word_right>, <&select_word_left>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ZMK_MACRO(select_word_right,
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings = <&kp _C(RIGHT) &kp _C(LEFT) &kp _C(LS(RIGHT))>;
+        )
+
+        ZMK_MACRO(select_word_left,
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings = <&kp _C(LEFT) &kp _C(RIGHT) &kp _C(LS(LEFT))>;
+        )
+
+        //
+        // extend current selection by one word
+        //
+        extend_word: extend_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EXTEND_WORD";
+            #binding-cells = <0>;
+            bindings = <&extend_word_right>, <&extend_word_left>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ZMK_MACRO(extend_word_right,
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings = <&kp _C(LS(RIGHT))>;
+        )
+
+        ZMK_MACRO(extend_word_left,
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings = <&kp _C(LS(LEFT))>;
+        )
+    };
+};
 
 #define XXX  &none
 #define ___  &trans
@@ -324,7 +405,7 @@ GLV80_LAYER(Numbers,
 // ├───────────────┼────────────────────┼───────────────────┼───────────────────┼─────────────────────┼──────────────────┤   ├────────┼─────────────────────┼───────────────────┼─────────────────────┼───────────────────────┼───────────┤
      &mt LCTRL ESC   &kp LCTRL            &kp LALT            &kp LGUI            &kp LSHIFT            &copy_sel_all_pc       &kp PLUS  &kp N4               &kp N5               &kp N6                &kp MINUS               ___
 // ├───────────────┼────────────────────┼───────────────────┼───────────────────┼─────────────────────┼──────────────────┤   ├────────┼─────────────────────┼───────────────────┼─────────────────────┼───────────────────────┼───────────┤
-     ___             ___                  ___                 ___                 &kp BACKSPACE         &paste_undo_pc     ,   &kp STAR  &kp N1               &kp N2               &kp N3                &kp FSLH                ___
+     ___             ___                  &extend_word        &select_word        &kp BACKSPACE         &paste_undo_pc     ,   &kp STAR  &kp N1               &kp N2               &kp N3                &kp FSLH                ___
 // ├───────────────┼────────────────────┼───────────────────┼───────────────────┼─────────────────────┼──────────────────╯   ╰────────┼─────────────────────┼───────────────────┼─────────────────────┼───────────────────────┼───────────┤
      ___             ___                  ___                 ___                 ___                                      ,             ___                  ___                  ___                   ___                     ___
 // ╰───────────────┴────────────────────┴───────────────────┴───────────────────┴─────────────────────╯                               ╰─────────────────────┴───────────────────┴─────────────────────┴───────────────────────┴───────────╯
