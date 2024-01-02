@@ -173,7 +173,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&pound_lower'
+  - $$mdi:currency-gbp$$
   - '`'
   - (
   - )
@@ -513,7 +513,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '%'
   - '7'
@@ -535,9 +535,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-outline$$
+  - {t: '&extend_word_right', s: '&extend_word_left'}
+  - {t: '&select_word_right', s: '&select_word_left'}
+  - {t: LC(A), h: sticky}
   - {t: LC(V), s: LC(Z)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
