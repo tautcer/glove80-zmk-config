@@ -74,8 +74,8 @@ layers:
   - $$mdi:keyboard-tab$$
   - ''
   - {t: Mouse, h: toggle}
-  - {t: '$$mdi:keyboard-return$$', h: Symbol}
-  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:keyboard-space$$', h: Symbol}
   - $$mdi:arrow-down$$
   - $$mdi:arrow-up$$
   - ']'
@@ -236,8 +236,8 @@ layers:
   - ':'
   - ;
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - ''
   - ''
