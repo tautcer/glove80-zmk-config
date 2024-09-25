@@ -223,7 +223,7 @@ layers:
   - ''
   - ''
   - $$mdi:backspace-reverse-outline$$
-  - Sft+ $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-tab-reverse$$
   - ''
   - ''
   - ''
@@ -514,7 +514,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-outline$$
-  - {t: Ctl+ X, h: sticky}
+  - Ctl+ X
   - '%'
   - '7'
   - '8'
