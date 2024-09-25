@@ -53,12 +53,12 @@ layers:
   - C
   - D
   - V
-  - Smart Shift
+  - Caps Word
   - ''
   - '&lower'
   - $$mdi:backspace-reverse-outline$$
   - ''
-  - $$mdi:apple-keyboard-shift$$
+  - Caps Word
   - K
   - H
   - {t: ',', s: ;}
