@@ -271,10 +271,10 @@ ZMK_UNICODE_SINGLE(pound, N0, N0, A, N3)  // £: U+00A3
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
-ZMK_COMBO(lbkt,  &kp LBKT,     RB1 RB2,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rbkt,  &kp RBKT,     RB2 RB3,     DEF     NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(lbrc,  &kp LBRC,     RB1 RB2,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(rbrc,  &kp RBRC,     RB2 RB3,         NAV    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lbkt,  &kp LBKT,     RB1 RB2,     BASE     NUMBERS, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbkt,  &kp RBKT,     RB2 RB3,     BASE     NUMBERS, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lbrc,  &kp LBRC,     RB1 RB2,         SYMBOL    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbrc,  &kp RBRC,     RB2 RB3,         SYMBOL    , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 GLV80_LAYER(Base,
 // ╭───────────────┬────────────────────┬───────────────────┬───────────────────┬─────────────────────╮                     ╭─────────────────────┬───────────────────┬─────────────────────┬───────────────────────┬───────────╮
